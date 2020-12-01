@@ -43,7 +43,7 @@ PORT=80 && echo "Invalid port chosen! Reverting to port 80"
 #if $SENDDATA is not equal to y (yes) then send no data
 	else DATA=0
 	fi
-#start TCP SYN flood using values defined earlier
+#start TCP SYN flood using values defined earlier OKAT
 #note that virtual fragmentation is set.  The default for hping3 is 16 bytes.
 #fragmentation should therefore place more stress on the target system
 	if [[ "$SOURCE" =~ ^([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})$ ]]; then
